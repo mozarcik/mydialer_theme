@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="keypad_color">#e6000000</color>
+    <color name="keypad_call_background_color">#ff669900</color>
+    <color name="bottom_bar_keypad_visible">#ff33b5e5</color>
+    <color name="bottom_bar_keypad_hidden">#ffdcdcdc</color>
+</resources>
