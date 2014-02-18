@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="device_default">1</integer>
+    <integer name="holo_light">2</integer>
+    <integer name="holo_dark">3</integer>
+
+    <integer name="base_theme">@integer/holo_light</integer>
+
+    <color name="contact_name_color">#ff000000</color>
+    <color name="contact_time_color">#ff323232</color>
+
+    <color name="keypad_number_color">@color/contact_name_color</color>
+    <color name="keypad_letters_color">@color/contact_time_color</color>
+
+    <color name="list_separator_color">#ff323232</color>
+    <color name="number_edit_color">#ff000000</color>
+    <color name="match_color">#ff33b5e5</color>
+    <color name="background_color">#fff3f3f3</color>
+
+
+    <drawable name="keypad_btn_background">@drawable/item_background_holo_light</drawable>
+    <drawable name="pinned_separator_background">@color/background_color</drawable>
+    <drawable name="list_divider">@drawable/list_divider_dark</drawable>
+    <drawable name="contact_item_background">@drawable/list_item_bkg</drawable>
+    <drawable name="list_selector">@drawable/item_background_holo_light</drawable>
+    <drawable name="keypad_background">@color/keypad_color</drawable>
+    <drawable name="bottom_bar_background">@color/keypad_color</drawable>
+    <drawable name="bottom_bar_button_background">@drawable/item_background_holo_light</drawable>
+
+    <drawable name="keypad_call_btn_background">@drawable/item_background_holo_light</drawable>
+    <drawable name="keypad_call_btn_background_active">@drawable/call_button_background</drawable>
+
+    <drawable name="quick_action_button_background">@drawable/item_background_holo_light</drawable>
+    <drawable name="quick_action_background">@color/keypad_color</drawable>
+
+    <string name="theme_name">Light</string>
+    <string name="theme_author">Michał Motyczko</string>
+</resources>

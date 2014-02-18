@@ -1,0 +1,42 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.8.+'
+    }
+}
+apply plugin: 'android'
+
+repositories {
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "19.0.0"
+
+    defaultConfig {
+		versionCode 1
+		versionName "1.0.0"
+        minSdkVersion 15
+        targetSdkVersion 19
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("$System.env.KEYSTORE_FILE")
+            storePassword "$System.env.KEYSTORE_PASSWORD"
+            keyAlias "$System.env.KEYSTORE_ALIAS"
+            keyPassword "$System.env.KEYSTORE_ALIAS_PASSWORD"
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+         }
+    }
+}
+
+dependencies {
+}

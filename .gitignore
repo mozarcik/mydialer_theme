@@ -6,4 +6,5 @@ gradle
 gradlew
 *iml
 gradlew.bat
-theme/build
+kitkat/build
+light/build
