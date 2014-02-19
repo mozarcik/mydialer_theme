@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pl.motyczko.dialer.theme.defaul"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <receiver android:name="pl.motyczko.dialer.theme.defaul.Theme" >
+            <intent-filter>
+                <action android:name="com.mozarcik.dialer.THEME" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

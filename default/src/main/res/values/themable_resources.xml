@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="device_default">1</integer>
+    <integer name="holo_light">2</integer>
+    <integer name="holo_dark">3</integer>
+
+    <integer name="base_theme">@integer/holo_dark</integer>
+
+    <color name="contact_name_color">#fff3f3f3</color>
+    <color name="contact_time_color">#ffbebebe</color>
+
+    <color name="keypad_number_color">@color/contact_name_color</color>
+    <color name="keypad_letters_color">@color/contact_time_color</color>
+
+    <color name="list_separator_color">#bebebe</color>
+    <color name="number_edit_color">#fff3f3f3</color>
+    <color name="match_color">#ff33b5e5</color>
+    <color name="background_color">#fff3f3f3</color>
+
+
+    <drawable name="keypad_btn_background">@drawable/item_background_holo_dark</drawable>
+    <drawable name="pinned_separator_background">@color/keypad_color</drawable>
+    <!--<drawable name="list_separator_background">@drawable/list_separator_background</drawable>-->
+    <drawable name="list_divider">@drawable/list_divider_dark</drawable>
+    <drawable name="contact_item_background">@drawable/list_item_bkg</drawable>
+    <drawable name="list_selector">@drawable/item_background_holo_dark</drawable>
+    <drawable name="keypad_background">@color/keypad_color</drawable>
+    <!--<drawable name="action_bar_background">@null</drawable>-->
+    <drawable name="bottom_bar_background">@color/keypad_color</drawable>
+    <drawable name="bottom_bar_button_background">@drawable/item_background_holo_dark</drawable>
+
+    <drawable name="keypad_call_btn_background">@drawable/item_background_holo_dark</drawable>
+    <drawable name="keypad_call_btn_background_active">@drawable/call_button_background</drawable>
+
+    <drawable name="quick_action_button_background">@drawable/item_background_holo_dark</drawable>
+    <drawable name="quick_action_background">@color/keypad_color</drawable>
+    <!--<drawable name="number_edit_background">@null</drawable>-->
+
+    <!--<drawable name="ic_action_add_contact">@null</drawable>-->
+    <!--<drawable name="ic_action_refresh">@null</drawable>-->
+    <!--<drawable name="ic_action_call">@null</drawable>-->
+    <!--<drawable name="ic_action_message">@null</drawable>-->
+    <!--<drawable name="ic_action_show_contact">@null</drawable>-->
+    <!--<drawable name="ic_action_call_history">@null</drawable>-->
+    <!--<drawable name="ic_action_share">@null</drawable>-->
+    <!--<drawable name="ic_action_edit">@null</drawable>-->
+    <!--<drawable name="ic_action_remove">@null</drawable>-->
+    <!--<drawable name="ic_action_search">@null</drawable>-->
+    <!--<drawable name="ic_dialpad">@null</drawable>-->
+    <!--<drawable name="ic_action_clear">@null</drawable>-->
+
+    <!--<drawable name="ic_phone_mobile">@null</drawable>-->
+    <!--<drawable name="ic_phone_home">@null</drawable>-->
+    <!--<drawable name="ic_phone_car">@null</drawable>-->
+    <!--<drawable name="ic_phone_work">@null</drawable>-->
+    <!--<drawable name="ic_phone_fax">@null</drawable>-->
+    <!--<drawable name="ic_phone_default">@null</drawable>-->
+
+    <!--<drawable name="ic_call_missed">@null</drawable>-->
+    <!--<drawable name="ic_call_outgoing">@null</drawable>-->
+    <!--<drawable name="ic_call_incoming">@null</drawable>-->
+    <!--<drawable name="ic_call_outgoing_missed">@null</drawable>-->
+
+    <!--<drawable name="activity_background">@null</drawable>-->
+    <!--<drawable name="contact_photo">@null</drawable>-->
+    <string name="theme_name">Default</string>
+    <string name="theme_author">Michał Motyczko</string>
+</resources>
