@@ -3,32 +3,49 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.12.+'
+        classpath 'com.android.tools.build:gradle:1.1.0'
     }
 }
-apply plugin: 'android'
+apply plugin: 'com.android.application'
 
 repositories {
     mavenCentral()
 }
 
+def getVersionName = { ->
+    def stdout = new ByteArrayOutputStream()
+    exec {
+        commandLine 'git', 'describe', '--tags', '--dirty'
+        standardOutput = stdout
+    }
+    return stdout.toString().trim()
+}
+
+def getVersionCode = { ->
+    def code = new ByteArrayOutputStream()
+    exec {
+        commandLine 'git', 'rev-list', 'HEAD', '--count'
+        standardOutput = code
+    }
+    return Integer.parseInt(code.toString().trim())
+}
 android {
-    compileSdkVersion 19
-    buildToolsVersion "19.1.0"
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
 
     defaultConfig {
-		versionCode 3
-		versionName "1.0.0"
+        versionCode getVersionCode()
+        versionName getVersionName()
         minSdkVersion 15
-        targetSdkVersion 19
+        targetSdkVersion 21
     }
 
     signingConfigs {
         release {
-            storeFile file("$System.env.KEYSTORE_FILE")
-            storePassword "$System.env.KEYSTORE_PASSWORD"
-            keyAlias "$System.env.KEYSTORE_ALIAS"
-            keyPassword "$System.env.KEYSTORE_ALIAS_PASSWORD"
+            storeFile file(sign_store_file)
+            storePassword sign_store_password
+            keyAlias sign_key_alias
+            keyPassword sign_key_password
         }
     }
     buildTypes {
